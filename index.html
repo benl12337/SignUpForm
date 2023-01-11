@@ -7,35 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <div class="container">
         <div class="left">
             <div class="logo-background">
-
+                <img src="assets/lsiLogo.svg" alt="LSI Logo">
+                <h1>LSI</h1>
             </div>
         </div>
         <div class="right">
             <div class="header">
-                This is not a real online service! You know you need something
-                like this in your life to help you realise your deepest dreams. <br>
-                Sign up now to get started. <br><br>
+                Slow internet speeds while watching Netflix? Cutting out in Zoom calls? <br>
+                Light Speed Internet can fix that. <br> <br> Sign up now to get started. <br><br>
                 You know you want to.
             </div>
             <div class="form-container">
                 <form>
                     <div class="input">
-                        <input type="text" id="first-name" placeholder="First Name" required>
-                        <input type="text" id="last-name" placeholder="Last Name" required>
+                        <input type="text" id="first-name" placeholder="First Name" pattern="\w*" required>
+                        <input type="text" id="last-name" placeholder="Last Name" pattern="\w*" required>
                     </div>
                     <div class="input">
                         <input type="email" placeholder="Email" required>
                         <input type="tel" id="telephone" placeholder="Mobile Number">
                     </div>
                     <div class="input">
-                        <input type="password" placeholder="Password" required>
-                        <input type="password" placeholder="Confirm Password" required>
+                        <input type="password" placeholder="Password" id="passwordOne" required>
+                        <input type="password" placeholder="Confirm Password" id="passwordTwo" class="" required>
                     </div>
                     <div class="footer">
                         <button>CREATE ACCOUNT</button>
@@ -44,6 +45,7 @@
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
