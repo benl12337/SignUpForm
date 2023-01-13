@@ -31,20 +31,18 @@ body {
     height: 800px;
     display: flex;
     border: 1px solid rgb(255, 255, 255);
-    border-radius: 80px;
 }
 
 .left {
     width: 30%;
     height: 100%;
-    background-color: transparent;
+    background-color: #1B1E1F;
 }
 
 .right {
     width: 70%;
     padding: 5%;
     background-color: white;
-    border-radius: 0 80px 80px 0;
 }
 
 .right .header {
@@ -118,4 +116,25 @@ button:hover {
 
 footer {
     color:white;
+}
+
+.passwordRequirements {
+    margin-top: -10px;
+    font-size: smaller;
+    opacity: 50%;
+}
+
+.notFulfilled {
+    color: rgb(223, 66, 66);
+}
+
+.requirementFulfilled {
+    margin-top: -10px;
+    font-size: smaller;
+    opacity: 50%;
+    color: rgb(52, 202, 52);
+}
+
+.passwordRequirements p {
+    margin: 0;
 }
